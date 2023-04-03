@@ -11,35 +11,26 @@
 <script src="https://kit.fontawesome.com/f12c75b631.js" crossorigin="anonymous"></script>
 
 <style>
-    body {
-        background-color: white;
-        background-image: url(/img/background.jpg);
+    body {}
 
-
+    .background-img {
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
     }
-
 
     .login-section {
         display: flex;
         justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
-
-
-    .login-items {
-        text-align: center;
-
+        margin-top: 75px;
     }
 
 
     .login-items h2 {
+        text-align: center;
         font-size: 50px;
         font-weight: 700;
         color: rgb(71, 71, 71);
         font-family: 'Alkatra', cursive;
-        margin-top: 300px;
     }
 
     .login-items input {
@@ -51,7 +42,7 @@
     }
 
     .login-item input {
-        font-family: 'Fasthand', cursive;
+        font-family: 'Fasthand';
         font-size: 20px;
         font-weight: 500;
         margin-top: 2px;
@@ -67,24 +58,27 @@
 
 <body>
     <section class="login-section">
+        <img class="background" src="/img/background.jpg" alt="Aleq">
         <form class="login-items" action="">
             <h2> Please Login</h2>
-            <div class="login-item">
-                <i class="fa-regular fa-user"></i>
-                <input type="text" placeholder="Username">
+            <div class="login-field">
+                <div class="login-item">
+                    <i class="fa-regular fa-user"></i>
+                    <input class="username" type="text" placeholder="Username">
+                </div>
+                <hr>
+                <div class="login-item">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <input type="email" name="" id="" placeholder="Email">
+                </div>
+                <hr>
+                <div class="login-item">
+                    <i class="fa-solid fa-lock-open"></i>
+                    <input type="password" name="" id="" placeholder="Password">
+                </div>
+                <hr>
+                <input type="submit" value="Login">
             </div>
-            <hr>
-            <div class="login-item">
-                <i class="fa-solid fa-envelope-open-text"></i>
-                <input type="email" name="" id="" placeholder="Email">
-            </div>
-            <hr>
-            <div class="login-item">
-                <i class="fa-solid fa-lock-open"></i>
-                <input type="password" name="" id="" placeholder="Password">
-            </div>
-            <hr>
-            <input type="submit" value="Login">
         </form>
 
 
